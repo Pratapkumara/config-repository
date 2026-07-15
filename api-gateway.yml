@@ -6,9 +6,6 @@ spring:
   application:
     name: api-gateway
 
-  config:
-    import: configserver:http://localhost:8888
-
 
 jwt:
   secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
