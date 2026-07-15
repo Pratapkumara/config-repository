@@ -1,6 +1,12 @@
 server:
   port: 8082
 
+
 spring:
   application:
     name: api-gateway
+
+
+jwt:
+  secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
+  expiration: 86400000
