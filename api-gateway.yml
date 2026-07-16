@@ -14,6 +14,7 @@ spring:
           enabled: true
           lower-case-service-id: true
 
+
       routes:
 
         - id: user-service
@@ -60,3 +61,23 @@ spring:
             - Path=/api/v1/notifications/**
           filters:
             - RewritePath=/api/v1/notifications(?<segment>/?.*), /api/notifications${segment}
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+jwt:
+  secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
+
+  expiration: 86400000
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
