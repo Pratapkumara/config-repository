@@ -11,6 +11,14 @@ spring:
     show-sql: true
 
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.31.1.229:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+
 management:
   endpoints:
     web:
