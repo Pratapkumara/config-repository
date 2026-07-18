@@ -1,14 +1,12 @@
 server:
   port: 8083
 
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/userdb
+    url: jdbc:postgresql://host.minikube.internal:5432/userdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
-
 
   jpa:
     hibernate:
@@ -20,7 +18,6 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
 
 jwt:
   secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
