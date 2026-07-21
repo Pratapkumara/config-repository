@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/notificationdb
+    url: jdbc:postgresql://ecommerce-platform-postgresql:5432/notificationdb
     username: postgres
     password: postgres
 

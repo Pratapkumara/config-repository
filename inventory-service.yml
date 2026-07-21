@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/inventorydb
+    url: jdbc:postgresql://ecommerce-platform-postgresql:5432/inventorydb
     username: postgres
     password: postgres
 
