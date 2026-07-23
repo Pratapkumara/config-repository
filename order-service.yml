@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://ecommerce-platform-postgresql:5432/orderdb
+    url: jdbc:postgresql://ecommerce-postgresql:5432/orderdb
     username: postgres
     password: postgres
 
