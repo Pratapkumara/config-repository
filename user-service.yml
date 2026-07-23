@@ -45,4 +45,5 @@ management:
 
 logging:
   level:
-    org.springframework.security: TRACE org.springframework.security.web: TRACE
+    org.springframework.security: TRACE
+    org.springframework.security.web: TRACE
