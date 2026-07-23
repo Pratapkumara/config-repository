@@ -11,6 +11,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
     show-sql: true
 
     properties:
@@ -32,6 +33,16 @@ jwt:
   secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
   expiration: 86400000
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
+
 logging:
   level:
-    org.springframework.security: TRACE
+    org.springframework.security: TRACE org.springframework.security.web: TRACE
