@@ -56,7 +56,7 @@ eureka:
       defaultZone: http://discovery-server:8761/eureka/
 
 jwt:
-  secret: UHJhdGFwRW50ZXJwcmlzZUVjb21tZXJjZUp3dFNlY3JldEtleTIwMjZQcm9kdWN0aW9uU2VjdXJlMTIzNDU2Nzg5
+  secret: ${JWT_SECRET}
   expiration: 86400000
 
 management:
